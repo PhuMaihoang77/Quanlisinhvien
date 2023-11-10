@@ -1,0 +1,115 @@
+body {
+    padding: 0px;
+    margin: 0px;
+
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    background-color: #FBE3A8;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+}
+
+.header h3 {
+    font-size: 29px;
+}
+
+.menu {
+    font-size: 23px;
+}
+
+.header li {
+    list-style: none;
+    display: inline;
+    padding: 50px;
+}
+
+div.form_sv,
+div.list_student {
+    width: auto;
+    border: 3px solid #ccc;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 20px;
+
+}
+
+div.form_sv {
+    background: #2d6eae;
+}
+
+div.form_sv label,
+h3 {
+    color: white;
+}
+
+.t1 {
+    background-color: #fafbb8;
+    border-radius: 10px;
+    width: 1200px;
+    height: 25px;
+}
+
+div.form_sv button {
+    background: #4ba33c;
+    border-radius: 20px;
+    border: none;
+    width: 100px;
+    height: 30px;
+}
+
+div.list_student {
+    width: auto;
+
+
+}
+
+div.form_sv h3 {
+    padding: 0px;
+    margin: 0px;
+}
+
+div.form_sv label {
+    width: 150px;
+    float: left;
+}
+
+div.form_sv input [type="text"],
+button {
+    /*lấy input ở trong text ko lấy trong radio để ko ảnh hưởng đến dòng*/
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+div span {
+    color: red;
+}
+
+
+
+.a2,
+.a1,
+.edit,
+.delete {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+
+}
+
+.a1 {
+    background-color: #c68c3f;
+}
+
+.a2 {
+    background-color: #ab323c;
+}

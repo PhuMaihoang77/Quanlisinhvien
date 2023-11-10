@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lí sinh viên</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src='https://cdn.jsdelivr.net/g/lodash@4(lodash.min.js+lodash.fp.min.js)'></script>
+    <script src="./student.js"></script>
+</head>
+
+<body onload="renderListstudent()">
+    <div class="header">
+        <h3><a href="index.html">MY SELF</a></h3>
+        <ul class="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Requirement</li>
+            <li>Design</li>
+            <li>Implement</li>
+
+        </ul>
+    </div>
+    <div class="form_sv">
+        <h3>Thông tin sinh viên </h3>
+        <label for="danhsach">Họ và tên</label>
+        <input class="t1" type="text" id="fullname" />
+        <span id="fullname-error"></span>
+        <br>
+        <label for="danhsach">Khóa</label>
+        <select id="year" name="year">
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+        </select>
+        <br>
+        <label for="danhsach">Địa chỉ email</label>
+        <input class="t1" type="text" id="email" />
+        <span id="email-error"></span>
+
+        <br>
+        <label for="danhsach">SĐT</label>
+        <input class="t1" type="text" id="phone" />
+        <span id="phone-error"></span>
+        <br>
+        <label for="danhsach">Giới tính</label>
+        <input type="radio" id="men" name="garden" value="Nam" /> Nam
+        <input type="radio" id="women" name="garden" value="Nữ" /> Nữ
+        <span id="garden-error"></span>
+        <br>
+        <label>&nbsp;</label> <!--tao khoảng trắng cho đẹp  -->
+        <button onclick="save()">Lưu thông tin</button>
+
+    </div>
+    <div class="list_student" id="list_students">
+        <H3>Danh sách sinh viên</H3>
+        <table id="view-student" width="1200" border="1" cellpading="0" cellpading="0">
+
+    </div>
+</body>
+
+</html>
